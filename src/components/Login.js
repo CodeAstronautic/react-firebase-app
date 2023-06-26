@@ -26,7 +26,7 @@ export default function Login() {
   }
 
   return (
-    <>
+    <div className="w-100 d-flex justify-content-center align-items-center" style={{height:'100vh'}}>
       <Card className="col-lg-6">
         <Card.Body>
           <h2 className="text-center mb-4">Log In</h2>
@@ -48,10 +48,11 @@ export default function Login() {
             <Link to="/forgot-password">Forgot Password?</Link>
           </div>
         </Card.Body>
-      </Card>
-      <div className="w-100 text-center mt-2">
+        <div className="w-100 text-center mt-2 mb-4">
         Need an account? <Link to="/signup">Sign Up</Link>
       </div>
-    </>
+      </Card>
+      
+    </div>
   )
 }

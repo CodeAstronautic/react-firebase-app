@@ -42,7 +42,7 @@ export default function UpdateProfile() {
   }
 
   return (
-    <>
+    <div className="w-100 d-flex justify-content-center align-items-center" style={{height:'100vh'}}>
       <Card className="col-lg-6">
         <Card.Body>
           <h2 className="text-center mb-4">Update Profile</h2>
@@ -80,10 +80,11 @@ export default function UpdateProfile() {
             </Button>
           </Form>
         </Card.Body>
-      </Card>
-      <div className="w-100 text-center mt-2">
+        <div className="w-100 text-center mt-2 mb-4">
         <Link to="/">Cancel</Link>
       </div>
-    </>
+      </Card>
+      
+    </div>
   )
 }
